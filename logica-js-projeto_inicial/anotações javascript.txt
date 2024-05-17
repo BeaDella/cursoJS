@@ -1,0 +1,26 @@
+DOCUMENTAÇÃO: https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+GUIA DE APRENDIZAGEM ALURA: https://www.alura.com.br/artigos/javascript?_gl=1*kgyjb1*_ga*MTgwMzA4NDI1MC4xNzE1ODY1Njkx*_ga_1EPWSW3PCS*MTcxNTg2ODI1Ni4yLjEuMTcxNTg3MDk2NC4wLjAuMA..*_fplc*bk04Z1Flc0RCd0klMkZEdVdXQjl1NFloZWJPdG9jZ0hNN1c0N0FaZ0dnOFRNcm9GdXlKcUZhTW5iZDFJelU3OHpEektGcjljTDBFeEh0eXJRZDMwVEhUdlBCNUxHbWhPSTM0MiUyQm5icjFlNnV3RkdNajlqamNMNHFlaTRkWVFtZyUzRCUzRA..
+
+
+alert(''); - exibe uma mensagem na tela
+
+let nomeVariavel = ; - define uma variável
+
+let nomeVariavel = prompt(''); - exibe uma tela para o usuário fazer um imput e armazena o valor em uma variável
+
+console.log(''); - exibe uma mensagem no console de inspecionar elemento
+
+// - comentário
+
+Template Strings (`mensagem qualquer ${variavel}`); - identação que permite o chamado de uma variável no texto
+
+operadores
+AND (A>B) && (B==C): se ambas forem verdadeiras, o resultado será verdadeiro
+OR (A>B) || (B==C): se ao menos uma das condições for verdadeira,o resultado será verdadeiro
+
+operador ternário: condição ? se sim : se não
+
+Math.random() - função que gera um numero pseudoaleatório entre 0 e 1
+
+parseInt() - pega apenas a parte inteira do número passado como parâmetro
