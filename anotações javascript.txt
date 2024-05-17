@@ -1,9 +1,7 @@
 DOCUMENTAÇÃO: https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript
 
-GUIA DE APRENDIZAGEM ALURA: https://www.alura.com.br/artigos/javascript?_gl=1*kgyjb1*_ga*MTgwMzA4NDI1MC4xNzE1ODY1Njkx*_ga_1EPWSW3PCS*MTcxNTg2ODI1Ni4yLjEuMTcxNTg3MDk2NC4wLjAuMA..*_fplc*bk04Z1Flc0RCd0klMkZEdVdXQjl1NFloZWJPdG9jZ0hNN1c0N0FaZ0dnOFRNcm9GdXlKcUZhTW5iZDFJelU3OHpEektGcjljTDBFeEh0eXJRZDMwVEhUdlBCNUxHbWhPSTM0MiUyQm5icjFlNnV3RkdNajlqamNMNHFlaTRkWVFtZyUzRCUzRA..
 
-
-alert(''); - exibe uma mensagem na tela
+alert(); - exibe uma mensagem na tela
 
 let nomeVariavel = ; - define uma variável
 
@@ -25,8 +23,28 @@ Math.random() - função que gera um numero pseudoaleatório entre 0 e 1
 
 parseInt() - pega apenas a parte inteira do número passado como parâmetro
 
-document.querySelector('h1') - seleciona uma seção do documento html
+variável = document.querySelector('h1') - seleciona uma seção do documento html e atribui à variável
+
+variável.value = pega o valor da seção do documento atribuída à variável
 
 innerHTML - te permite mexer no html correspondente àquela variável
 
-function nomeDaFuncao {} - declara uma função
+function nomeDaFuncao() {}
+
+getElementById('')
+
+removeAttribute('nome do atributo')
+
+setAttribute('nome do atributo', valor dele)
+
+var array = ['teclado', 'mouse'] - cria uma lista
+
+array.length - retorna quantos elementos a lista possui
+
+first = array[0] - atribui o primeiro elemento (teclado) à variável first
+
+array.includes(first) - verifica se a lista possui o elemento referenciado
+
+array.push('mousepad') - insere o elemento referenciado ao final da lista
+
+array.pop(); - remove o último elemento da lista
