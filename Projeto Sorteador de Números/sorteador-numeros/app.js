@@ -9,6 +9,12 @@ function sortear() {
     let numerosSorteados = [];
     let numeroGerado;
 
+    if (minimo >= maximo || (maximo - minimo + 1) < quantidade) {
+        alert('Não é possível fazer o sorteio com os números informados.\nPor favor, preencha novamente com um intervalo maior.');
+        limparCampos();
+        return;
+    }
+
     for (let i = 0; i < quantidade; i++) {
         numeroGerado = gerarNumeroAleatorio(minimo, maximo);
         
@@ -45,15 +51,18 @@ function alteraStatusBotao() {
     }
 }
 
+function limparCampos() {
+    document.getElementById('quantidade').value = '';
+    document.getElementById('de').value = '';
+    document.getElementById('ate').value = '';
+}
+
 function reiniciar() {
     
     //if para não executar a função onclick se o botão estiver desabilitado
     if (botaoReiniciar.className == 'container__botao') {
-        document.getElementById('quantidade').value = '';
-        document.getElementById('de').value = '';
-        document.getElementById('ate').value = '';
-    
-        resultado.innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>'
+        limparCampos();
+        resultado.innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>';
         alteraStatusBotao();
     } else {
         return;
