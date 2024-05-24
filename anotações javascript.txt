@@ -21,13 +21,17 @@ operador ternário: condição ? se sim : se não
 
 Math.random() - função que gera um numero pseudoaleatório entre 0 e 1
 
-parseInt() - pega apenas a parte inteira do número passado como parâmetro
+parseInt() - retorna o valor passado como um número inteiro
+
+parseFlaot() - retorna o valor passado como um número com ponto flutuante
 
 variável = document.querySelector('h1') - seleciona uma seção do documento html e atribui à variável
 
 variável.value = pega o valor da seção do documento atribuída à variável
 
 innerHTML - te permite mexer no html correspondente àquela variável
+
+innerText - te permite modificar o texto entre a tag
 
 function nomeDaFuncao() {}
 
@@ -48,3 +52,6 @@ array.includes(first) - verifica se a lista possui o elemento referenciado
 array.push('mousepad') - insere o elemento referenciado ao final da lista
 
 array.pop(); - remove o último elemento da lista
+
+elemento.classList.contains() - verifica se o elemento possui tal classe CSS
+(é possível adicionar ou remover classes CSS com .add() e .remove() no lugar de contains)
