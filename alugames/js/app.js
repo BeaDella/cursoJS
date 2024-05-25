@@ -1,39 +1,25 @@
 function alterarStatus(numeroJogo) {
-    
-    if (numeroJogo == 1) {
-        let monopoly = document.getElementById('game-1').querySelector('a');
 
-        if (monopoly.classList.contains('dashboard__item__button--return')) {
-            monopoly.classList.remove('dashboard__item__button--return');
-            monopoly.innerText = 'Alugar';
+    let jogo = document.getElementById(`game-${numeroJogo}`);
+    let imagem = jogo.querySelector('.dashboard__item__img');
+    let botao = jogo.querySelector('.dashboard__item__button');
+    let nomeJogo = jogo.querySelector('.dashboard__item__name');
+
+    if (imagem.classList.contains('dashboard__item__img--rented')) {
+
+        let confirmacao = prompt(`Tem certeza que deseja devolver ${nomeJogo.textContent}? (S/N)`);
+        if (confirmacao == 'S' || confirmacao == 's') {
+            imagem.classList.remove('dashboard__item__img--rented');
+            botao.classList.remove('dashboard__item__button--return');
+            botao.textContent = 'Alugar';
         }
         else {
-            monopoly.classList.add('dashboard__item__button--return');
-            monopoly.innerText = 'Devolver';
+            return;
         }
     }
-    else if (numeroJogo == 2) {
-        let ticketToRide = document.getElementById('game-2').querySelector('a');
-
-        if (ticketToRide.classList.contains('dashboard__item__button--return')) {
-            ticketToRide.classList.remove('dashboard__item__button--return');
-            ticketToRide.innerText = 'Alugar';
-        }
-        else {
-            ticketToRide.classList.add('dashboard__item__button--return');
-            ticketToRide.innerText = 'Devolver';
-        }
-    }
-    else if (numeroJogo == 3) {
-        let takenoko = document.getElementById('game-3').querySelector('a');
-
-        if (takenoko.classList.contains('dashboard__item__button--return')) {
-            takenoko.classList.remove('dashboard__item__button--return');
-            takenoko.innerText = 'Alugar';
-        }
-        else {
-            takenoko.classList.add('dashboard__item__button--return');
-            takenoko.innerText = 'Devolver';
-        }
+    else {
+        imagem.classList.add('dashboard__item__img--rented')
+        botao.classList.add('dashboard__item__button--return');
+        botao.textContent = 'Devolver';
     }
 }
